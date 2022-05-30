@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/klaytn-network-visualizer'),
+      dir: require('path').join(__dirname, './coverage/polygon-network-visualizer'),
       subdir: '.',
       reporters: [
         { type: 'html' },
