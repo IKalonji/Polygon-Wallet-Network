@@ -17,17 +17,17 @@ export class CovalentService {
   constructor(private http:HttpClient) { }
 
   getTransactionNetwork(wallet:string){
-    let BASE_URL = `http://127.0.0.1:5000/wallet_network/${wallet}/chain/${this.chainID}`
+    let BASE_URL = `https://polygon-netowrk-visualizer.herokuapp.com/wallet_network/${wallet}/chain/${this.chainID}`
     return this.http.get(BASE_URL)
   }
 
   getWalletTransactionData(wallet:string) {
-      let BASE_URL = `http://127.0.0.1:5000/wallet_transactions/${wallet}/chain/${this.chainID}`
+      let BASE_URL = `https://polygon-netowrk-visualizer.herokuapp.com/wallet_transactions/${wallet}/chain/${this.chainID}`
       return this.http.get(BASE_URL)
   }
 
   getWalletBalances(wallet:string) {
-    let BASE_URL = `http://127.0.0.1:5000/wallet_balance/${wallet}/chain/${this.chainID}`
+    let BASE_URL = `https://polygon-netowrk-visualizer.herokuapp.com/wallet_balance/${wallet}/chain/${this.chainID}`
     return this.http.get(BASE_URL)
 }
 
