@@ -157,7 +157,9 @@ Please install the below required software in order to run the project.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-[Live Demo](https://polygon-network-visualizer.vercel.app/)
+[Live dApp Demo](https://polygon-network-visualizer.vercel.app/)
+
+[Video Demo](https://youtu.be/VocCijZIzls)
 
 
 _Please refer to the [Documentation](https://github.com/IKalonji/Polygon-Wallet-Network/blob/main/README.md)_
