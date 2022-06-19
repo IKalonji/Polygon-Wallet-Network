@@ -6,8 +6,8 @@ import { UserService } from 'src/services/user.service';
 
 const uauth = new UAuth(
   {
-    clientID: "403b33b6-7f56-44bb-9504-900181c9fb6b",
-    redirectUri: "http://localhost:4200/login"
+    clientID: "a892174c-662d-46f2-9059-37e2a786da24",
+    redirectUri: "https://polygon-network-visualizer.vercel.app/login"
   }
   )
 
