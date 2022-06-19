@@ -114,7 +114,7 @@ Please install the below required software in order to run the project.
 
 ### Installation
 
-#### NOTE: Please request CLIENT ID and CLIENT SECRET in order to test with the Web3Auth (Default values provided in app.component.ts file).  
+#### NOTE: Please request CLIENT ID in order to test with the Unstoppable Domains (Default values provided in login.component.ts file).  
 
 1. Clone the repo
    ```sh
