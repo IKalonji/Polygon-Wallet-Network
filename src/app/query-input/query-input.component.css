@@ -1,0 +1,45 @@
+#wallet-input{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #47473d67;
+    border-radius: 5px;
+    padding: 10px;
+    height: 500px;
+    width: 500px;
+    box-shadow: 0px 0px 48px 6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 48px 6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 48px 6px rgba(0,0,0,0.75);
+}
+
+.title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgba(0, 0, 150, 0.678);
+    font-weight: 800;
+}
+
+.paragraph{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+#inputDiv{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.submitButton{
+    height: 50px;
+    font-size: x-large;
+    background-color: rgba(0, 0, 255, 0.795);
+    color: antiquewhite;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    -webkit-box-shadow: 11px 10px 45px 1px rgba(57,33,235,1);
+    -moz-box-shadow: 11px 10px 45px 1px rgba(57,33,235,1);
+    box-shadow: 11px 10px 45px 1px rgba(57,33,235,1);
+}

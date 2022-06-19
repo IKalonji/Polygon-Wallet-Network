@@ -1,1 +1,15 @@
-<p>login works!</p>
+<div id="main" class="main">
+    <div id="title">
+        <h1 class="typer">
+            Into the WalletVerse
+        </h1>  
+    </div>
+    <div id="login-button" *ngIf="showButton">
+        <button (click)="login()" class="loginButton" *ngIf="!userLoggedIn">
+            <label for="login-button">Login</label>
+        </button>
+        <button (click)="getStarted()" class="loginButton" *ngIf="userLoggedIn">
+            <label for="login-button">Get Started</label>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div id="wallet-input">
+    <h1 class="title">WalletVerse.</h1>
+    <p class="paragraph">
+        Please enter the Polygon address <br>
+        to query, or alternatively you may provide <br>
+        the Unstoppable Domain to for resolution and querying.
+    </p>
+    <br>
+    <div id="inputDiv">
+        <span>
+            <input style="width: 250px;" type="search" placeholder="Address" [(ngModel)]="wallet" disabled="{{disableInput}}">
+        </span>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button (click)="resolveDomain()" class="submitButton">
+            <label for="submit">Enter the WalletVerse</label>
+        </button>
+        <div *ngIf="loading" class="loading">
+            <div class="lds-ripple">
+                <div></div>
+                <div></div>
+            </div>
+            <br>
+            <br>
+            <div>
+                <p>Crunching the data...Just a moment</p>
+                <progress></progress>
+            </div>
+        </div>
+    </div>
+</div>

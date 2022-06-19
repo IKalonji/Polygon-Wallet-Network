@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  covalentKey: "ckey_bc359eed184b4990ad1be0846cd"
+  chainID: "137"
 };
 
 /*

@@ -1,0 +1,18 @@
+<h2 class="title">Address Balance:</h2>
+<div *ngFor="let balance of balanceData">
+    <span>
+        <label>TOKEN: {{balance.token}}</label>&nbsp;
+        <label>SYMBOL: {{balance.symbol}}</label>&nbsp;
+        <label>BAL: {{balance.balance}}</label>&nbsp;
+    </span>
+    <br>
+</div>
+<h2 class="title">Transaction History:</h2>
+<div *ngFor="let transaction of transactionData">
+    <span>
+        <label for="balanceItem">FROM: {{transaction.from_address}}</label>&nbsp;
+        <label for="balanceItem">TO: {{transaction.to_address}}</label>&nbsp;
+        <label for="balanceItem">DATE: {{transaction.block_signed_at}}</label>&nbsp;
+    </span>
+    <br>
+</div>
