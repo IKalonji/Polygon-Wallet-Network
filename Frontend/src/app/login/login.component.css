@@ -1,0 +1,25 @@
+.main{
+    background-image: url(../../assets/PolyNetworkVisualizer.png); 
+    height: 920px; 
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: rgb(128, 129, 177);
+    padding-left: 10rem;
+    padding-top: 10rem;
+    font-size: 34px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.loginButton{
+    width: 200px;
+    height: 50px;
+    font-size: x-large;
+    background-color: rgb(0, 0, 255);
+    color: antiquewhite;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    margin-left: 10rem;
+    margin-top: 5rem;
+}

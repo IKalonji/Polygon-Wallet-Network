@@ -43,3 +43,9 @@
     -moz-box-shadow: 11px 10px 45px 1px rgba(57,33,235,1);
     box-shadow: 11px 10px 45px 1px rgba(57,33,235,1);
 }
+
+#user{
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

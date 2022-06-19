@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CovalentService } from 'src/services/covalent.service';
+import { UserService } from 'src/services/user.service';
 
 @Component({
   selector: 'app-query-input',
@@ -14,14 +15,17 @@ export class QueryInputComponent implements OnInit {
   loading:boolean = false;
   disableInput:boolean= false;
 
+  user:string=""
+
   data:any = {
     "nodes": [],
     "links": []
   }
 
-  constructor(private router: Router, private covalent: CovalentService) { }
+  constructor(private router: Router, private covalent: CovalentService, private userService: UserService) { }
 
   ngOnInit(): void {
+    this.user = this.userService.getUser()
   }
 
   resolveDomain(){

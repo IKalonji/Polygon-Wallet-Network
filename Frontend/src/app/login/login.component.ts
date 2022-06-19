@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import UAuth from '@uauth/js'
+import { UserService } from 'src/services/user.service';
 
 
 const uauth = new UAuth(
@@ -17,15 +18,13 @@ const uauth = new UAuth(
 })
 export class LoginComponent implements OnInit {
 
-  showButton:boolean=false;
   userLoggedIn:boolean=false
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private userService: UserService) { }
 
   ngOnInit(): void {
     setTimeout(() => {
       console.log("Show login");
-      this.showButton = true;
     },
     3000);
   }
@@ -34,6 +33,7 @@ export class LoginComponent implements OnInit {
     try{
       const authorization = await uauth.loginWithPopup();
       console.log(authorization)
+      this.userService.setUser(authorization.idToken.sub)
       this.userLoggedIn = true;
     }catch (error){
       this.userLoggedIn = true;
