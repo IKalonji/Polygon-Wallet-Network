@@ -1,1 +1,1 @@
-web: gunicorn --chdir RequestHandler app:app
+web: gunicorn --timeout 0 --chdir RequestHandler app:app
