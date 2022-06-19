@@ -16,7 +16,7 @@ def handle_request(wallet, chain):
 def call_covalent(wallet, chain):
     '''Method calls covalent transaction data request on wallet'''
     covalentKey = "ckey_bc359eed184b4990ad1be0846cd"
-    URL = f"https://api.covalenthq.com/v1/{chain}/address/{wallet}/transactions_v2/?key={covalentKey}&page-size=30"
+    URL = f"https://api.covalenthq.com/v1/{chain}/address/{wallet}/transactions_v2/?key={covalentKey}&page-size=5"
     call_response = requests.get(URL)
     if call_response.status_code > 201:
         return dict()
